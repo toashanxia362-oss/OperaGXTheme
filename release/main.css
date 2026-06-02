@@ -85,6 +85,8 @@
   --control-primary-background-hover: rgba(var(--accent-color-1), 0.15)!important;
   --text-brand: rgb(var(--accent-color-2)) !important;
   --checkbox-background-selected-default: rgb(var(--accent-color-1)) !important;
+  --radio-background-selected-default: rgb(var(--accent-color-1)) !important;
+  --radio-background-selected-hover: rgba(var(--accent-color-1),0.2) !important;
 }
 
 /* thai */
@@ -1040,6 +1042,16 @@ html #app-mount:before,
   opacity: 1;
 }
 
+.switchIndicator_a28278 {
+  border-radius: 10px !important;
+}
+.switchIndicator_a28278[style*="background-color: rgb(88, 101, 242)"] {
+  background-color: rgb(var(--accent-color-1)) !important;
+}
+.switchIndicator_a28278[style*="background-color: rgb(68, 82, 187)"] {
+  background-color: rgba(var(--accent-color-1), 0.5) !important;
+}
+
 /* Settings Border*/
 .contentRegion__23e6b {
   border: var(--border-color-accent-1);
@@ -1985,6 +1997,11 @@ code.inline {
   border-radius: 0px;
 }
 
+.pageBody__41ed7 {
+  background: transparent;
+  background-color: transparent;
+}
+
 #app-mount .downloadApps__4a98c {
   background: rgb(var(--darker-background-color)) !important;
   border: var(--border-color-accent-1);
@@ -2275,9 +2292,21 @@ code.inline {
   background-color: transparent !important;
 }
 
-.shop__6db1d {
+.shop__6db1d,
+.content__49668 {
   background-color: rgba(var(--chat-transparency-color), var(--chat-transparency)) !important;
   backdrop-filter: blur(var(--chat-background-blur)) !important;
+}
+
+.productCard__79d38 {
+  border: var(--border-color-accent-1) !important;
+  border-radius: 0px !important;
+  background: rgb(var(--dark-background-color)) !important;
+}
+
+.content__49668 {
+  border-right: var(--border-color-accent-1) !important;
+  border-top: var(--border-color-accent-1) !important;
 }
 
 .container_a56260,
