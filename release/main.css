@@ -23,6 +23,7 @@
   --background-accent: rgb(var(--accent-color-1)) !important;
   --background-modifier-accent: rgb(var(--accent-color-1)) !important;
   --background-primary: rgba(var(--dark-background-color), var(--other-transparency)) !important;
+  --card-background-default: rgba(var(--dark-background-color), var(--other-transparency)) !important;
   --background-secondary: rgba(var(--dark-background-color), var(--other-transparency)) !important;
   --background-secondary-alt: rgba(var(--darker-background-color), var(--other-transparency)) !important;
   --background-tertiary: rgba(var(--darker-background-color), var(--background-behind-appmounty)) !important; /* This use to be --other-transparency, if stuff is transparent and breaks this is why*/
@@ -1998,8 +1999,8 @@ code.inline {
 }
 
 .pageBody__41ed7 {
-  background: transparent;
-  background-color: transparent;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 #app-mount .downloadApps__4a98c {
@@ -2255,6 +2256,11 @@ code.inline {
   background-color: rgb(var(--dark-background-color));
 }
 
+.cardPrimary__73069 {
+  border: var(--border-color-accent-1) !important;
+  background-color: rgb(var(--dark-background-color)) !important;
+}
+
 .shopViewWrapper__6db1d {
   border-top: var(--border-color-accent-1) !important;
   border-right: var(--border-color-accent-1) !important;
@@ -2307,6 +2313,20 @@ code.inline {
 .content__49668 {
   border-right: var(--border-color-accent-1) !important;
   border-top: var(--border-color-accent-1) !important;
+}
+
+.cardContainerWithoutTopIndicator__3efc4,
+.container__3efc4 {
+  border-radius: 0px !important;
+}
+
+.tierInfoContainer__3efc4 {
+  border: var(--border-color-accent-1) !important;
+  border-bottom: none !important;
+}
+
+.subscriptionPerks__3efc4 {
+  border: var(--border-color-accent-1) !important;
 }
 
 .container_a56260,
